@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagegallery</title>
+    <style>
+        * {
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family:Arial,sans-serif;
+            background:lightblue;
+            padding:20px;
+        }
+        h1{
+            text-align: center;
+            margin-bottom: 30px;
+            color:purple;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+            gap:15px;
+            max-width: 1200px;
+            margin:o auto;
+        }
+        .gallery img{
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        .gallery img:hover{
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <h1>My codeAlpha Imagegallery</h1>
+    <div class="gallery"
+    <img src="https://picsum.photos/600/400?random=1" class="gallery-img" alt="Image 1">
+    <img src="https://picsum.photos/600/400?random=2" class="gallery-img" alt="Image 2">
+    <img src="https://picsum.photos/600/400?random=3" class="gallery-img" alt="Image 3">
+    <img src="https://picsum.photos/600/400?random=4" class="gallery-img" alt="Image 4">
+    <img src="https://picsum.photos/id/1025/400/300"  class="gallery-img" alt="Image 5">
+    <img src="https://picsum.photos/id/1060/400/300"  class="gallery-img" alt="Image 6">
+    </div>
+</body>
+</html>
