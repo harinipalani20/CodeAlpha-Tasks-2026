@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harini - Portfolio</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+        body { font-family: Arial, sans-serif; color: #333; }
+        
+        header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 80px 20px; text-align: center; }
+        header h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        header p { font-size: 1.2rem; }
+        
+        nav { background: #333; padding: 15px; text-align: center; position: sticky; top: 0; z-index: 100; }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; font-size: 1.1rem; }
+        nav a:hover { color: #667eea; }
+        
+        section { padding: 60px 20px; max-width: 900px; margin: auto; }
+        section h2 { text-align: center; margin-bottom: 30px; font-size: 2rem; color: #667eea; }
+        
+        .about { background: #f4f4f4; }
+        .about p { text-align: center; font-size: 1.1rem; max-width: 600px; margin: auto; line-height: 1.8; }
+        
+        .projects { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; }
+        .card { background: white; border-radius: 10px; padding: 25px; width: 280px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s; }
+        .card:hover { transform: translateY(-8px); }
+        .card h3 { color: #764ba2; margin-bottom: 10px; }
+        .card a { display: inline-block; margin-top: 15px; padding: 10px 20px; background: #667eea; color: white; text-decoration: none; border-radius: 5px; }
+        .card a:hover { background: #764ba2; }
+        
+        .contact { background: #333; color: white; text-align: center; }
+        .contact a { color: #667eea; text-decoration: none; font-size: 1.1rem; }
+        .contact p { margin: 10px 0; }
+        
+        footer { background: #222; color: white; text-align: center; padding: 20px; }
+        
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.8rem; }
+            nav a { margin: 0 8px; font-size: 1rem; }
+            .card { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hi, Harini</h1>
+        <p>Aspiring Frontend Developer | HTML CSS JavaScript</p>
+    </header>
+    
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>I'm Harini, a passionate beginner web developer. I love creating simple, clean websites using HTML, CSS, and JavaScript. Currently learning new things daily and building projects for my internship. My goal is to become a skilled Frontend Developer!</p>
+    </section>
+    
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects">
+            <div class="card">
+                <h3>Calculator App</h3>
+                <p>Built with HTML, CSS, and JavaScript. Performs addition, subtraction, multiplication, and division.</p>
+                <a href="calculator.html">View Calculator</a>
+            </div>
+            <div class="card">
+                <h3>Image Gallery - Coming Soon</h3>
+                <p>Responsive image gallery with filter option. Currently under development.</p>
+                <a href="#">View Project</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="harinipalani20@gmail.com">harinipalani20@gmail.com</a></p>
+    </section>
+    <footer>
+        <p>&copy; 2026 Harini. Built for Internship Task 3.</p>
+    </footer>
+</body>
+</html>
